@@ -7,10 +7,13 @@ def dissipated_power(voltage, resistance):
 	return puissance
 
 def orthogonal(v1, v2):
+	import math
 	# TODO: Retourner vrai si les vecteurs sont orthogonaux, faux sinon.
 	v1[0] # Pour accéder au X
 	v1[1] # Pour accéder au Y
-	pass
+	#Objectif; calculer le produit scalaire et vérifier si cela est égal à zéro et retrouner vrai si le PS est égal a zéro
+	ProdScal = v1[0] * v2[0] + v1[1] * v1[1]
+	return ProdScal == 0
 
 def average(values):
 	# TODO: Calculer la moyenne des valeurs positives (on ignore les valeurs strictement négatives).
