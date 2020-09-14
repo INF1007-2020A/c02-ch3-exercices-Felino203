@@ -1,0 +1,55 @@
+test_average (__main__.TestExercice) ... ok
+test_bills (__main__.TestExercice) ... ERROR
+test_dissipated_power (__main__.TestExercice) ... FAIL
+test_orthogonal (__main__.TestExercice) ... FAIL
+
+======================================================================
+ERROR: test_bills (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:/Users/felix/PycharmProjects/GitHubProjects/c02-ch3-exercices-Felino203/test_exercice.py", line 79, in test_bills
+    output = [bills(d) for d in data]
+  File "C:/Users/felix/PycharmProjects/GitHubProjects/c02-ch3-exercices-Felino203/test_exercice.py", line 79, in <listcomp>
+    output = [bills(d) for d in data]
+  File "C:\Users\felix\PycharmProjects\GitHubProjects\c02-ch3-exercices-Felino203\exercice.py", line 31, in bills
+    twenties, tens, fives,  ones = 0
+TypeError: cannot unpack non-iterable int object
+
+======================================================================
+FAIL: test_dissipated_power (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:/Users/felix/PycharmProjects/GitHubProjects/c02-ch3-exercices-Felino203/test_exercice.py", line 20, in test_dissipated_power
+    self.assertEqual(
+AssertionError: Lists differ: [1999620, 15876000] != [11.335714285714285, 0.196]
+
+First differing element 0:
+1999620
+11.335714285714285
+
+- [1999620, 15876000]
++ [11.335714285714285, 0.196] : Calcul incorrect
+
+======================================================================
+FAIL: test_orthogonal (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:/Users/felix/PycharmProjects/GitHubProjects/c02-ch3-exercices-Felino203/test_exercice.py", line 38, in test_orthogonal
+    self.assertEqual(
+AssertionError: Lists differ: [True, True, True, False, False] != [True, True, True, False, True]
+
+First differing element 4:
+False
+True
+
+- [True, True, True, False, False]
+?                           ^^^^
+
++ [True, True, True, False, True]
+?                           ^^^
+ : Calcul incorrect
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=2, errors=1)

@@ -28,7 +28,7 @@ def average(values):
 
 def bills(value):
 	# TODO: Calculez le nombre de billets de 20$, 10$ et 5$ et pièces de 1$ à remettre pour représenter la valeur.
-	twenties, tens, fives,  ones = 0
+	twenties = tens = fives = ones = 0
 	while value != 0:
 		if value >= 20:
 			twenties = value // 20
@@ -39,14 +39,13 @@ def bills(value):
 			value = value % 10
 			pass
 		elif value >= 5:
-			fives value // 5
+			fives = value // 5
 			value = value % 5
 			pass
 		elif value >= 1:
 			ones = value // 1
 			value = value % 1
 			pass
-
 	return (twenties, tens, fives, ones);
 
 if __name__ == "__main__":
